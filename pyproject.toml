@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "reComBat"
+version = "0.1.0"
+description = "regularised ComBat method to correct batch effects"
+authors = ["Michael F. Adamer <mikeadamr@gmail.com>", "Sarah C. Brüningk"]
+
+license = "BSD-3-Clause"
+readme = "README.md"
+
+homepage = "https://github.com/BorgwardtLab/reComBat"
+repository = "https://github.com/BorgwardtLab/reComBat"
+keywords = ["combat", "recombat", "batch correction"]
+
+include = ["LICENSE"]
+
+packages = [{ include="reComBat", from="." }]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.20.0"
+sklearn = "^0.0"
+tqdm = "^4.62.3"
+fire = "^0.4.0"
+pandas = "^1.3.4"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+reComBat = "reComBat.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
