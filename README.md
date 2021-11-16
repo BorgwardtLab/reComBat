@@ -1,10 +1,9 @@
 # reComBat
 
-<!---
-[![License: MIT](https://img.shields.io/github/license/Jfortin1/neuroCombat)](https://opensource.org/licenses/MIT)
-[![Version](https://img.shields.io/pypi/v/neuroCombat)](https://pypi.org/project/neuroCombat/)
-[![PythonVersion](https://img.shields.io/pypi/pyversions/neuroCombat)]()
---->
+
+[![License: BSD](https://img.shields.io/github/license/BorgwardtLab/reComBat)](https://opensource.org/licenses/BSD-3-Clause)
+[![Version](https://img.shields.io/pypi/v/reComBat)](https://pypi.org/project/reComBat/)
+[![PythonVersion](https://img.shields.io/pypi/pyversions/reComBat)]()
 
 This is the reComBat implementation as described in the [recent paper]().
 The paper introduces a generalized version of the empirical Bayes batch correction method introduced in [1].
