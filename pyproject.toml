@@ -2,7 +2,7 @@
 name = "reComBat"
 version = "0.1.0"
 description = "regularised ComBat method to correct batch effects"
-authors = ["Michael F. Adamer <mikeadamr@gmail.com>", "Sarah C. Brüningk"]
+authors = ["Michael F. Adamer <mikeadamer@gmail.com>", "Sarah C. Brüningk <sarah.brueningk@bsse.ethz.ch>"]
 
 license = "BSD-3-Clause"
 readme = "README.md"
