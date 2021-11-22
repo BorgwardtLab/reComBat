@@ -5,7 +5,7 @@
 [![Version](https://img.shields.io/pypi/v/reComBat)](https://pypi.org/project/reComBat/)
 [![PythonVersion](https://img.shields.io/pypi/pyversions/reComBat)]()
 
-This is the reComBat implementation as described in the [recent paper]().
+This is the reComBat implementation as described in our [recent paper](https://doi.org/10.1101/2021.11.22.469488).
 The paper introduces a generalized version of the empirical Bayes batch correction method introduced in [1].
 We use the two-design-matrix approach of Wachinger et al. [2]
 
@@ -18,10 +18,11 @@ reComBat is a PyPI package which can be installed via `pip`:
 pip install reComBat
 ```
 
-You can also clone the repo and install it locally via [Poetry](https://python-poetry.org/):
+You can also clone the repository and install it locally via [Poetry](https://python-poetry.org/) by executing
+```bash
+poetry install
 ```
-poetry install reComBat
-```
+in the repository directory.
 
 ## Usage
 
@@ -61,7 +62,7 @@ The `fit`, `transform` and `fit_transform` functions all take pandas dataframes 
 
 ## Optional arguments
 
-The `reComBat` cclass has the following optional arguments:
+The `reComBat` class has the following optional arguments:
 
   - `parametric` : `True` or `False`. Choose between the parametric or non-parametric version of the empirical Bayes method.
   By default, this is `True`, i.e. the parametric method is performed. Note that the non-parametric method has a longer run time than the parametric one.
@@ -87,6 +88,15 @@ The command line interface can take any of these arguments (except for `config`)
 ## Output
 
 The `transform` method and the command line interface output a dataframe, respectively a csv file, of the form (samples x features) with the adjusted data.
+
+## Contact
+
+This code is developed and maintained by members of the [Machine Learning and
+Computational Biology Lab](https://www.bsse.ethz.ch/mlcb) of [Prof. Dr.
+Karsten Borgwardt](https://www.bsse.ethz.ch/mlcb/karsten.html):
+
+- [Michael Adamer](https://mikeadamer.github.io/) ([GitHub](https://github.com/MikeAdamer))
+- Sarah Brüningk ([GitHub](https://github.com/sbrueningk))
 
 *References*:
 
