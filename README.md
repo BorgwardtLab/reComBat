@@ -1,9 +1,9 @@
 # reComBat
 
 
-[![License: BSD](https://img.shields.io/github/license/BorgwardtLab/reComBat)](https://opensource.org/licenses/BSD-3-Clause)
-[![Version](https://img.shields.io/pypi/v/reComBat)](https://pypi.org/project/reComBat/)
-[![PythonVersion](https://img.shields.io/pypi/pyversions/reComBat)]()
+[![License: BSD](https://img.shields.io/github/license/BorgwardtLab/recombat)](https://opensource.org/licenses/BSD-3-Clause)
+[![Version](https://img.shields.io/pypi/v/recombat)](https://pypi.org/project/recombat/)
+[![PythonVersion](https://img.shields.io/pypi/pyversions/recombat)]()
 
 This is the reComBat implementation as described in our [recent paper](https://doi.org/10.1101/2021.11.22.469488).
 The paper introduces a generalized version of the empirical Bayes batch correction method introduced in [1].
