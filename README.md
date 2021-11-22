@@ -35,7 +35,7 @@ from reComBat import reComBat
 
 combat = reComBat()
 combat.fit(data,batches)
-combat.transform(data, batches)
+combat.transform(data,batches)
 ```
 or
 
