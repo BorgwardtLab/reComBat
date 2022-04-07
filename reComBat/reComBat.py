@@ -221,7 +221,7 @@ class reComBat(object):
             if C_covariates.shape[1] != self.beta_c_.shape[0]:
                 raise ValueError("The feature dimensions of fit C design matrix and transform C design matrix are different.")
             else:
-                C_tmp = np.matmul(X_covariates,self.beta_x_)
+                C_tmp = np.matmul(C_covariates,self.beta_c_)
         else:
             C_tmp = 0
 
