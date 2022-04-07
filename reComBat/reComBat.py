@@ -199,8 +199,8 @@ class reComBat(object):
             X_categorical_one_hot = pd.get_dummies(X_categorical.astype(str),drop_first=True).values
             X_covariates = np.hstack([X_categorical_one_hot,X_numerical])
         if C is not None:
-            C_categorical = C.loc[:,[c for c in X.columns if '_numerical' not in c]]
-            C_numerical = C.loc[:,[c for c in X.columns if '_numerical' in c]].values
+            C_categorical = C.loc[:,[c for c in C.columns if '_numerical' not in c]]
+            C_numerical = C.loc[:,[c for c in C.columns if '_numerical' in c]].values
             C_categorical_one_hot = pd.get_dummies(C_categorical.astype(str),drop_first=True).values
             C_covariates = np.hstack([C_categorical_one_hot,C_numerical])
 
@@ -266,8 +266,8 @@ class reComBat(object):
         if C is not None:
             if C.isna().any().any():
                 raise ValueError("The design matrix C contains NaN values.")
-            C_categorical = C.loc[:,[c for c in X.columns if '_numerical' not in c]]
-            C_numerical = C.loc[:,[c for c in X.columns if '_numerical' in c]].values
+            C_categorical = C.loc[:,[c for c in C.columns if '_numerical' not in c]]
+            C_numerical = C.loc[:,[c for c in C.columns if '_numerical' in c]].values
             C_categorical_one_hot = pd.get_dummies(C_categorical.astype(str),drop_first=True).values
             C_covariates = np.hstack([C_categorical_one_hot,C_numerical])
             C_covariates_dim = C_covariates.shape[1]
