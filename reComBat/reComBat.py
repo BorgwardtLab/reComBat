@@ -56,7 +56,7 @@ class reComBat(object):
 
     def __init__(self,
                  parametric=True,
-                 model='linear',
+                 model='elastic_net',
                  config=None,
                  conv_criterion=1e-4,
                  max_iter=1000,
