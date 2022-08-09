@@ -1,2 +1,5 @@
 __pycache__
 dist
+
+.ipynb_checkpoints
+.DS_Store

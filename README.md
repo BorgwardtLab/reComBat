@@ -67,7 +67,7 @@ The `reComBat` class has the following optional arguments:
   - `parametric` : `True` or `False`. Choose between the parametric or non-parametric version of the empirical Bayes method.
   By default, this is `True`, i.e. the parametric method is performed. Note that the non-parametric method has a longer run time than the parametric one.
   - `model` : Choose which regression model should be used to standardise the data. You can choose between `linear`, `ride`, `lasso` and `elastic_net` regression.
-  By default the `linear` model is used.
+  By default the `elastic_net` model is used.
   - `config` : A Python dictionary specifying the keyword arguments for the relevant `scikit-learn` regression functions. for further details refer to [sklearn.linear_model](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model). The default is `None`.
   - `conv_criterion` : The convergence criterion for the parametric empirical Bayes optimization. Relative, rather than absolute convergence criteria are used.
   The default is 1e-4.
@@ -88,6 +88,10 @@ The command line interface can take any of these arguments (except for `config`)
 ## Output
 
 The `transform` method and the command line interface output a dataframe, respectively a csv file, of the form (samples x features) with the adjusted data.
+
+## Tutorial
+
+We included a step-by-step tutorial in the `tutorial` folder of the GitHub repository. We also provide a PDF version which serves as a manual.
 
 ## Contact
 
