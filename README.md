@@ -68,7 +68,15 @@ The `reComBat` class has the following optional arguments:
   By default, this is `True`, i.e. the parametric method is performed. Note that the non-parametric method has a longer run time than the parametric one.
   - `model` : Choose which regression model should be used to standardise the data. You can choose between `linear`, `ride`, `lasso` and `elastic_net` regression.
   By default the `elastic_net` model is used.
-  - `config` : A Python dictionary specifying the keyword arguments for the relevant `scikit-learn` regression functions. for further details refer to [sklearn.linear_model](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model). The default is `None`.
+  - `config` : A Python dictionary specifying the keyword arguments for the relevant `scikit-learn` regression classes.
+
+  For example, the `LinearRegression` class in `scikit-learn` currently has four non-deprecated keyword arguments, `fit_intercept`, `copy_X`, `n_jobs`, and `positive`. To specify each of them, we create a `config` dict
+  ```python
+  config = {'fit_intercept':False,'copy_X':True,'n_jobs':1,'positive':False}
+  ```
+  Note that in order for reComBat to give the correct result, the `fit_intercept` parameter always needs to be set to `False`.
+
+  For further details refer to [sklearn.linear_model](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model). The default `config` is `None`.
   - `conv_criterion` : The convergence criterion for the parametric empirical Bayes optimization. Relative, rather than absolute convergence criteria are used.
   The default is 1e-4.
   - `max_iter` : The maximum number of iterations for the parametric empirical Bayes optimization. The default is 1000.
